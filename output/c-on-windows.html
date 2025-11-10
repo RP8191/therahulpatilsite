@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>C on Windows</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+    <meta name="description" content="Build C++ programs on windows 10 install cygwin create simple c++ file (single.cpp in this example) in any editor. #include <iostream> using..." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">rahulpatil</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/review.html">Review</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/c-on-windows.html" rel="bookmark"
+             title="Permalink to C on Windows">C on Windows</a></h1>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2010-12-03T10:20:00+05:30">
+                Published: Fri 03 December 2010
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/rahul.html">@rahul</a>
+                </address>
+        <p>In <a href="/category/review.html">Review</a>.</p>
+        
+</footer><!-- /.post-info -->        <p>Build C++ programs on windows 10</p>
+<ol>
+<li>
+<p>install cygwin </p>
+</li>
+<li>
+<p>create simple c++ file (single.cpp in this example) in any editor.</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="c1">#include &lt;iostream&gt;</span>
+using<span class="w"> </span>std::count<span class="p">;</span>
+
+int<span class="w"> </span>main<span class="o">(){</span>
+<span class="w">    </span>cout&lt;&lt;<span class="s2">&quot;hello !&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w">   </span>
+<span class="o">}</span>
+</code></pre></div>
+
+<ol>
+<li>start cygwin command prompt. Type </li>
+</ol>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span><span class="s2">&quot;C:&quot;</span>
+</code></pre></div>
+
+<ol>
+<li>User cd to desired directory where the cpp source file resides. Type</li>
+</ol>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>g++<span class="w"> </span>-o<span class="w"> </span>single.exe<span class="w"> </span>single.cpp
+</code></pre></div>
+
+<ol>
+<li>
+<p>This will create the output file single.exe</p>
+</li>
+<li>
+<p>To run the single.exe, type :</p>
+</li>
+</ol>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>chmod<span class="w"> </span>a+x<span class="w"> </span>single
+$<span class="w"> </span>./single
+</code></pre></div>
+
+<ol>
+<li>Should display following message on the prompt.</li>
+</ol>
+<div class="highlight"><pre><span></span><code>hello<span class="w"> </span>!
+</code></pre></div>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                                        <li><a href="#">You can modify those links in your config file</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+
+                                                        <li><a href="#">You can add links in your config file</a></li>
+                                                        <li><a href="#">Another social link</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

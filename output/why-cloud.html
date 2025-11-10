@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Why cloud</title>
+                        <link rel="stylesheet" href="/theme/css/main.css" />
+    <meta name="description" content="cloud enables rapid change - speed scale - scalability resilience - agility enabled by ready to use cloud environment - pets vs cattle 12 factor..." />
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="/">rahulpatil</a></h1>
+                        <nav><ul>
+                                                <li class="active"><a href="/category/review.html">Review</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="/why-cloud.html" rel="bookmark"
+             title="Permalink to Why cloud">Why cloud</a></h1>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2010-12-03T10:20:00+05:30">
+                Published: Fri 03 December 2010
+        </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="/author/rahul.html">@rahul</a>
+                </address>
+        <p>In <a href="/category/review.html">Review</a>.</p>
+        
+</footer><!-- /.post-info -->        <p>cloud enables
+    rapid change - speed
+    scale - scalability 
+    resilience - agility
+enabled by 
+    ready to use cloud environment - pets vs cattle</p>
+<p>12 factor (https://12factor.net/codebase)</p>
+<ol>
+<li>codebase - one (version controlled) codebase per app. If apps share the codebase then move the common components to a common lib. </li>
+<li>For example, Bundler for Ruby offers the Gemfile manifest format for dependency declaration and bundle exec for dependency isolation. In Python there are two separate tools for these steps – Pip is used for declaration and Virtualenv for isolation.</li>
+<li>configuration - The twelve-factor app stores config in environment variables (often shortened to env vars or env). Env vars are easy to change between deploys without changing any code; unlike config files, there is little chance of them being checked into the code repo accidentally; and unlike custom config files, or other config mechanisms such as Java System Properties, they are a language- and OS-agnostic standard.</li>
+<li>Backing Services - The code for a twelve-factor app makes no distinction between local and third party services. To the app, both are attached resources, accessed via a URL or other locator/credentials stored in the config. A deploy of the twelve-factor app should be able to swap out a local MySQL database with one managed by a third party (such as Amazon RDS) without any changes to the app’s code. Likewise, a local SMTP server could be swapped with a third-party SMTP service (such as Postmark) without code changes. In both cases, only the resource handle in the config needs to change.</li>
+<li>Build-Release-Run - Keep these steps separate. i.e. you can not make changes to code at run time and expect it to propagated back to build stage. <em>common sense</em></li>
+<li>Processes - execute using stateless processes which share nothing. The twelve-factor app never assumes that anything cached in memory or on disk will be available on a future request or job</li>
+<li>Concurrency Twelve-factor app processes should never daemonize or write PID files. Instead, rely on the operating system’s process manager (such as systemd, a distributed process manager on a cloud platform, or a tool like Foreman in development) to manage output streams, respond to crashed processes, and handle user-initiated restarts and shutdowns.</li>
+</ol>
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                                        <li><a href="#">You can modify those links in your config file</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+
+                                                        <li><a href="#">You can add links in your config file</a></li>
+                                                        <li><a href="#">Another social link</a></li>
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>
